@@ -1,0 +1,52 @@
+.header {
+    height          : 80px;
+    background-color: #fff;
+
+    .header-top {
+        height       : 40px;
+        line-height  : 40px;
+        border-bottom: 1px solid green;
+        text-align   : right;
+        padding-right: 20px;
+
+        a {
+            margin-left: 10px;
+        }
+    }
+
+    .header-bottom {
+        display    : flex;
+        align-items: center;
+        height     : 40px;
+
+        .header-bottom-left {
+            width     : 25%;
+            text-align: center;
+            position  : relative;
+            font-size : 20px;
+
+            &::after {
+                content      : '';
+                border-top   : white solid 20px;
+                border-left  : transparent solid 20px;
+                border-right : transparent solid 20px;
+                border-bottom: transparent solid 20px;
+                position     : absolute;
+                top          : 100%;
+                right        : 50%;
+                transform    : translateX(50%);
+            }
+        }
+
+        .header-bottom-right {
+            width       : 75%;
+            text-align  : right;
+            margin-right: 20px;
+
+            img {
+                width : 30px;
+                margin: 0 10px;
+            }
+        }
+    }
+}
